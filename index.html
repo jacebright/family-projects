@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bright Family Home Page</title>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="/scripts/christmas.js" defer></script>
+    <link rel="stylesheet" href="/styles/family.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Who am I gifting to this year?</h1>
+    </header>
+    <main>
+    <form id="formedChristmas">
+        <label for="giver">Select your name:</label>
+        <select id="giver" name="giver">
+            <option value="" disabled selected></option>
+            <option value="Merie">Merie</option>
+            <option value="Jace">Jace</option>
+            <option value="Jo">Jo</option>
+            <option value="Evin">Evin</option>
+            <option value="Morgan">Morgan</option>
+            <option value="Rissa">Rissa</option>
+            <option value="Izy">Izy</option>
+        </select>
+        <label for="year">Input a year:</label>
+        <input type="text" id="year" name="year">
+
+        <button type="submit" id="getReceiver">Show me who!</button>
+        
+    </form>
+    <span id="receiver"></span>
+    </main>
 </body>
 </html>
